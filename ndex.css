@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+    background-color: rgb(37, 37, 37);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.right {
+    flex:1;
+
+}
+
+/* sign in block */
+
+.sign_in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 30px;
+}
+form{
+    width: 80%;
+    padding-bottom:3rem;
+}
+.logo{
+    margin-bottom: 8vh;
+}
+.logo img{
+    width: 300px;
+}
+.sign_in label{
+    font-size: 16px;
+    line-height: 2rem;
+    font-weight: 500;  
+    color: white;
+}
+.text{
+    margin-bottom: 1.5rem;
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgb(134, 133, 133);
+        border: 1px solid grey;
+        color: rgb(230, 230, 230);
+        padding: 5px 5px ;
+
+}
+@media(min-width:1200px) 
+{
+    .left{
+        flex:4;
+    }
+    .right{
+        flex:6;
+    }
+    
+}
+
+.primary_button{
+
+    padding: 20px;
+    width: 100%;
+    background-color:rgb(254, 108, 40);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    border: none;
+    display: block;
+    font-weight: 500;
+    color: white;
+    text-decoration: white;
+    cursor: grab;
+    text-align: center;
+    transition: all 0.5s;
+
+
+}
+.primary_button:hover{
+    background-color: black;
+
+}
+.secondary_button {
+
+    padding: 10px;
+    width: 100%;
+    background-color:none;
+    border-radius: 10px;
+   
+    border: 2px solid rgb(254, 108, 40);
+    display: block;
+    font-weight: 500;
+    color: white;
+
+    text-decoration: white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+
+
+}
+
+.secondary_button:hover {
+    background-color: black;
+
+}
+.links a{
+    display: block;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 500;
+    justify-content: center;
+
+}
+ a :hover {
+    text-decoration: underline;
+    color: black;
+    background-color: azure;
+}
+.secondary_button,
+.or{
+    width: 60%;
+}
+.or{
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.bar{
+    border: 0.1px solid rgb(144, 144, 144);
+    flex: auto;
+    height: 1px;
+    
+}
+span{
+    color: white;
+    padding: 0 5px;
+
+}
+/*footer*/
+.main_footer{
+    color: white;
+    font-size: 11px;
+    text-decoration: underline;
+
+}
+.main_footer a{
+    color:rgb(254, 108, 40);
+    font-size: 11px;
+}
+
+.showcase{
+    display: flex;
+    background: url(lily-banse--YHSwy6uqvk-unsplash.jpg)no-repeat center center / cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.link_button {
+
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    background-color: none;
+    border-radius: 10px;
+
+    border: 2px solid rgb(254, 108, 40);
+    display: block;
+    font-weight: 500;
+    color: white;
+
+    text-decoration: white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+
+
+}
+
+.link_button:hover {
+    background-color: rgb(26, 21, 21);
+
+}
+.showcase_text{
+    font-size: 80px;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 300;
+
+
+}
+strong{
+    color: rgb(255, 255, 255);
+}
+.Lets{
+    color:rgb(230, 124, 75);
+}
+@media (max-width:768px){
+    .right{
+        display: none;
+    }
+    
+}
